@@ -5,7 +5,9 @@
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
 	<title>Tanbirul Miah - Contact</title>
@@ -30,30 +32,31 @@
     <h1>Hi there</h1>
     
   <h3>If you have any questions for me, feel free to reach out!</h2>
-  <form>
-    <fieldset>
-      <!-- <legend>Sample Form</legend> -->
-  
-      <label for="name_id">Your Name</label>
-      <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
-  
-      <label for="email_id">Your Email</label>
-      <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
-  
-      <label for="phone_id">Your Phone Number</label>
-      <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-      <div><span>Format: 123-456-7890</span></div>
-  
-  
-      <label for="msg">Leave A Message</label>
-      <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
-  
-      <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
-      <label for ="cBox">Remember me</label>
-  
-      <input type="submit" value = "Contact Me">
-    </fieldset>
-   </form>
+    
+  <form action="https://formspree.io/f/meqprlgy" method="POST">
+      <fieldset>
+        <legend>Contact Form</legend>
+    
+        <label for="name_id">Your Name</label>
+        <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+    
+        <label for="email_id">Your Email</label>
+        <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+    
+        <label for="phone_id">Your Phone Number</label>
+        <input type="tel" name="phone" id = "phone_id" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <div><span>Format: 123-456-7890</span></div>
+    
+    
+        <label for="msg">Leave A Message</label>
+        <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+    
+        <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+        <label for ="cBox">Remember me</label>
+    
+        <input type="submit" value = "Contact Me">
+      </fieldset>
+     </form>
   </main>
 
 <div class="footerbox">
