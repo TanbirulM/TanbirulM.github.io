@@ -54,7 +54,8 @@ h5 {
 
 body{
   margin: auto;
-  font-family: 'Ubuntu', sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+  background-color: #cccccc;
 }
 
 header {
@@ -443,7 +444,7 @@ nav ul{
 
   .container {
     grid-template-columns: repeat(3, auto);
-    overflow: auto;
+    overflow: visible auto;
     
   }
 
