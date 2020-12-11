@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Tanbirul Miah - Projects</title>
+    </head>
+<body>
+  <a href="#main" class="skip">Skip to Main Content</a>
+  <header>
+  <div class="index-navcontainer">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="projects.html">Projects</a></li>
+        <li><a href="favorites.html">Hobbies</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="transbox">
+
+  <div id="parallax"></div>
+
+  <h2>These are projects that I feel represent what I learned from my programming classes.</h3> 
+  
+  <div class="flexbox-container" role="main">
+    <button class="accordion active">Euchre</button>
+<div class="panel" style="display: block;">
+  <div class="gallery-header1">
+    <p>Euchre (pronounced “YOO-kur”) is a trick-taking card game popular in Michigan. It is most commonly played by four people in two partnerships with a deck of 24 cards. 
+      Partnerships accumulate points for winning tricks, and the game continues until one side reaches the maximum number of points.</p>
+
+    <p>In this project, you will write a simulator for a game of Euchre. You will gain experience with abstract data types, object-oriented programming, and polymorphism. 
+      While building the simulator, you will use classes, std::array, std::vector, and C++ style strings.</p>
+
+    <p>This project consisted of simulating a game of euchre with both computer players and human players. This included, deck shuffling, dealing, playing tricks, scoring, 
+      and the computer's strategy. Computer players used a simple strategy that didn't take into account other players' cards, only taking into account the suit that was led. Human players were informed of the board state and asked for input for every decision.</p>
+  </div>
+  <div class="images-flexbox">
+
+    <img src="images/euchre2.png" alt="Example Output">
+    </div>
+    <h4>   </h4>
+</div>
+
+<button class="accordion">HTTP and JSON Requests</button>
+<div class="panel">
+
+  <p>For this project, a file containing a specific HTTP request is read into the program. Then the program interprets the request and performs the necessary action. This project focused on adding people to a queue. GET, POST, and DELETE requests were used to change the queue and see who was currently waiting.</p>
+  
+  <div class="images-flexbox">
+    <img src="images/p4_2.png" alt="Office Hour Queue">
+  </div>
+</div>
+
+<button class="accordion">Machine Learning</button>
+<div class="panel">
+  <p>In this project, you will write a program that uses natural language processing and 
+    machine learning techniques to automatically identify the subject of posts from the EECS 280 Piazza. 
+    You will gain experience with recursion, binary trees, templates, comparators, and the map data structure.</p>
+  
+  <p>This project used machine learning methods to classify the topic of questions posted in an Piazza, an online forum. The classification method 
+    used was a simpler version of the "Multi-Variate Bernoulli Naive Bayes Classifier". The classifier was trained using already classified 
+    posts and then was used to determine the most likely topic for unclassified posts.</p>
+  
+  <p>With a lot of freedom to design the structure of your overall application, this project provided a lot of experience for future
+    independent coding projects.</p>
+  
+  <div class="images-flexbox">
+    <img src="images/p5_3.png" alt="Example Post">
+  </div>
+  <h4>   </h4>
+</div>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/tanbirul-miah-6888ab168/" aria-label="Linkedin Link"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/TanbirulM" aria-label="Github Link"><i class="fa fa-github"></i></a>
+    <a href="mailto:tanbirum@umich.edu" aria-label="Email Link"><i class="fa fa-envelope"></i></a>
+  </footer>
+</body>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+</html>
