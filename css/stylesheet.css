@@ -54,7 +54,6 @@ h5 {
 
 body{
   margin: auto;
-  /* font-family: 'Ubuntu', sans-serif; */
   background-color: #cccccc;
 }
 
@@ -235,7 +234,7 @@ footer{
   align-content: center;
 }
 
-/* Play page styling */
+
 .container {
   display: grid;
   grid-template-columns: repeat(1, auto);
@@ -262,7 +261,7 @@ footer{
 .play-card:focus .card-inner {
   transform: rotateY(180deg);
 }
-/* hover state */
+
 .play-card:hover .card-inner {
   filter: opacity(0.5)
 }
@@ -304,23 +303,6 @@ footer{
   padding-bottom: 10px;
   font-size: 2rem;
   text-align: center;
-}
-
-@media screen and (min-width:0px) and (max-width:375px){
-  /* body{
-      background-color: yellow;
-  } */
-
-  
-  /* ABOUT PAGE */
-  .aboutphoto{
-      /* background-color: blue; */
-      display: inline-block;
-      width: 70%;
-      margin-left: 15%;
-  }
-
-  
 }
 
 @media screen and (min-width: 550px) {
